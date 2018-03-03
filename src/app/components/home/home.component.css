@@ -1,13 +1,21 @@
 #quote{
        background: rgb(204, 199, 247);
-       width: 35%;
-       margin: 5% 0% 0% 5%;
+       width: 45%;
+       margin: 10%;
        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
        transition: 0.3s;
+       overflow: hidden;
+       padding: 3%;
 }
 .wall{
        background: rgb(rgb(149, 176, 226), green, blue);
 }
 .j1{
        margin: 10% 10% 10% 10%;
+}
+.custom{
+       margin: 7% 0% 0% 0%;
+}
+p{
+       width: 80%;
 }

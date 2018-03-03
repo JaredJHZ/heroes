@@ -1,0 +1,19 @@
+<div class="row" style="width:100%; margin:0">
+  <h3 style="color:white">Found</h3>
+  <div class="card-columns" *ngFor="let heroe of heroesFound;">
+    <div class="card">
+      <img [src]="heroe.img" alt="" class="card-img-top">
+      <div class="card-body">
+        <h5 #buscarTexto class="card-title" >{{heroe.nombre}}</h5>
+        <p class="card-text">{{heroe.bio}}</p>
+        <p class="card-text"><small class="text-muted">{{heroe.aparicion}}</small></p>
+        <button 
+        (click)="verHeroe(buscarTexto)"
+        type="button" class="btn btn-outline-primary btn-block"></button>
+      </div>
+    </div>
+  </div>
+  <div class="message" *ngIf="heroesFound.length==0">
+    <h1>No hay heroes relacionados a la busqueda</h1>
+  </div>
+</div>
